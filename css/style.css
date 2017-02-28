@@ -1,0 +1,160 @@
+
+.form-group
+{
+  margin-left: 75%;
+  margin-bottom: 2.5%;
+  margin-top: 2%;
+}
+
+.col-sm-3
+{
+  font-size: 1em;
+  font-family: "Sansita";
+  text-align: center;
+}
+.navbar-nav
+{
+  float: none;
+}
+
+.navbar-nav > li > a
+{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+footer
+{
+  background-color: #2C2828;
+  height: 100px;
+  font-family: "Sansita";
+
+}
+p
+{
+  /*margin-top: 31.3%;*/
+  text-align: center;
+  padding-top: 3%;
+  font-family: "Sansita";
+  color: #E3E1E1;
+}
+.article
+{
+  width: 35%;
+  margin-bottom: 1.5%;
+  text-align: center;
+  display: inline-block;
+}
+
+.articles
+{
+  width: 76%;
+  margin-bottom: 1.5%;
+  text-align: center;
+  display: inline-block;
+  margin-left: 12%;
+}
+
+.Contenu
+{
+  background-color: #FFFFFFB3;
+
+  margin-bottom: 1.5%;
+  text-align: center;
+}
+#comment
+{
+  color: #d1452c;
+}
+h3
+{
+  text-align: center;
+}
+.navbar
+{
+  border-radius: 0px;
+}
+
+a
+{
+  color: #8C8181;
+}
+
+.nav > li > a:focus, .nav > li > a:hover
+{
+  background-color: transparent;
+}
+.article img
+{
+  max-width: 50%;
+  max-height: 40%;
+}
+
+.coffee
+{
+width: 100%;
+margin-bottom: 3%;
+}
+
+.head{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+.join
+{
+  font-family: "Sansita";
+  font-size: 1.2em;
+  color: #B9B3B2;
+  background-color: #BD7A4166;
+  padding: 4%;
+  border-radius: 7px;
+}
+
+form
+{
+  width: 75%;
+  margin-left: 12%;
+  text-align: center;
+  margin-bottom: 3%;
+  background-color: rgba(19, 35, 47, 0.9);
+  padding: 2%;
+  border-radius: 5px;
+  color : #FFFFFF;
+  font-family: "Roboto";
+}
+.form-control
+{
+  font-family: "Roboto";
+  border-radius: 2px;
+  border : 1px solid #a0b3b0;
+  background-color: rgba(39, 55, 66, 0.9);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn{
+  width: 49%;
+  margin-top: 5%;
+  background : #1ab188;
+}
+
+.icon{
+  width: 32px;
+  height: 32px;
+}
+
+#text
+{
+  color: #000000;
+}
+
+#auteur
+{
+  color: #000000;
+}
+
+#date
+{
+  color: #000000;
+}
