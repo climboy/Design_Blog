@@ -50,14 +50,16 @@
 	</div>
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
-								<li class="col-sm-3"><img class="icon"src="css/house.png"><a href="Accueil.php">Accueil</a></li>
-								<li class="col-sm-3"><img class="icon"src="css/web.png"><a href="Creation.php">Création</a></li>
-								<li class="col-sm-3"><img class="icon"src="css/folder.png"><a href="Categories.php">Catégories</a></li>
-								<li class="col-sm-3"><img class="icon"src="css/followers.png"><a href="Follow.php">Follow</a></li>
+								<li class="col-sm-3"><a href="home.php">Accueil</a></li>
+								<li class="col-sm-3"><a href="postarticles.php">Création</a></li>
+								<li class="col-sm-3"><a href="Categories.php">Catégories</a></li>
+								<li class="col-sm-3"><a href="Follow.php">Follow</a></li>
 							</ul>
 					</div>
 				</div>
 			</nav>
+			<input id="recherche" class="col-sm-4 col-sm-offset-4" type="text" name="recherche" placeholder="Search">
+
 		</div>
       <footer role="contentinfo">
         <p>Copyright (c) 2017  Thomas Clavier</p>

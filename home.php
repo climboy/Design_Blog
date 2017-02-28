@@ -1,15 +1,17 @@
 <?php
+  	try{
+  		$bdd = new PDO('mysql:host=localhost;dbname=blog_thomas;charset=utf8', 'root', '');
+  	}
 
-	try{
-		$bdd = new PDO('mysql:host=localhost;dbname=blog_thomas;charset=utf8', 'root', '');
-	}
+  	catch (Exception $e){
+  		die('Erreur : ' . $e->getMessage());
+  	}
 
-	catch (Exception $e){
-		die('');
-	}
+  	$reponses = $bdd->query('SELECT * FROM articles ORDER BY id DESC');
 
- ?>
 
+
+  		?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,15 +31,15 @@
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
     <div class="form-group">
-    <button type="submit" name="button">S'inscrire</button>
+    <a class="join" href="Inscription.php">S'inscrire</a>
   </div>
   <div class="form-group">
-    <button type="submit" name="button">Connexion</button>
+    <a class="join" href="#">Connexion</a>
   </div>
 </div>
 </div>
 </div>
-<nav class="navbar navbar-light" style="background-color: #1A1919E6;" role="navigation">
+<nav class="navbar navbar-light" role="navigation">
           <div class="container-fluid">
       <div class="navbar-header">
    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -57,11 +59,32 @@
           </div>
         </div>
       </nav>
-			<input id="recherche" class="col-sm-4 col-sm-offset-4" type="text" name="recherche" placeholder="Search">
+      <input id="recherche" class="col-sm-4 col-sm-offset-4" type="text" name="recherche" placeholder="Search">
 
 		</div>
+		<?php foreach($reponses as $reponse){ ?>
+			<div class="container article">
+				<?php if (file_exists(__DIR__.'/picture/article'.$reponse['id'].'.png')) { ?>
+  <img src="picture/article<?php echo $reponse['id']; ?>.png">
+				<?php } ?>
+				<div class="Contenu">
+		<h3><?php echo $reponse['title']; ?></h3>
+		<!-- <p id="text"><?php echo $reponse['text']; ?></p> -->
+
+		<a id="comment"href="Commentaire.php?id=<?php echo $reponse['id']; ?>">Lire plus et laisser un commentaire</a>
+
+		<p id="auteur">Ecrit par: <?php echo $reponse['author']; ?></p>
+
+		<p id="date">Paru le: <?php echo date('d/m/Y', strtotime($reponse['date'])); ?></p>
+  </div>
+</div>
+
+
+  		<?php } ?>
+
       <footer role="contentinfo">
         <p>Copyright (c) 2017  Thomas Clavier</p>
+
       </footer>
   </body>
 </html>
