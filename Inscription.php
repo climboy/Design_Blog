@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Accueil</title>
   </head>
   <body>
@@ -58,9 +59,9 @@
 					</div>
 				</div>
 			</nav>
-			<input id="recherche" class="col-sm-4 col-sm-offset-4" type="text" name="recherche" placeholder="Search">
-
 		</div>
+		<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <footer role="contentinfo">
         <p>Copyright (c) 2017  Thomas Clavier</p>
       </footer>

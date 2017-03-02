@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Accueil</title>
   </head>
   <body>
@@ -58,8 +59,15 @@
           </div>
         </div>
       </nav>
-			<input id="recherche" class="col-sm-4 col-sm-offset-4" type="text" name="recherche" placeholder="Search">
-
+		</div>
+		<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<div class="container">
+			<div class="row">
+			 <div class="col-xs-4 col-sm-4"><a href="https://www.facebook.com/thomas.martins.7712?fref=ts"><img class="social" src="css/facebook.svg"></a></div>
+			 <div class="col-xs-4 col-sm-4"><a href="https://twitter.com/thomasmartins31"><img class="social" src="css/twitter.svg"></a></div>
+			 <div class="col-xs-4 col-sm-4"><a href="https://github.com/climboy"><img class="social" src="css/git.svg"></a></div>
+			</div>
 		</div>
       <footer role="contentinfo">
         <p>Copyright (c) 2017  Thomas Clavier</p>

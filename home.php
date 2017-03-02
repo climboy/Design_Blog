@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Accueil</title>
   </head>
   <body>
@@ -59,29 +60,43 @@
           </div>
         </div>
       </nav>
-      <input id="recherche" class="col-sm-4 col-sm-offset-4" type="text" name="recherche" placeholder="Search">
-
 		</div>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <div class="container-fluid">
+
+<div class="row">
 		<?php foreach($reponses as $reponse){ ?>
-			<div class="container article">
+			<!-- <div class="container"> -->
+
+          <div class="col-sm-4">
+
 				<?php if (file_exists(__DIR__.'/picture/article'.$reponse['id'].'.png')) { ?>
-  <img src="picture/article<?php echo $reponse['id']; ?>.png">
+  <img  class="picture" src="picture/article<?php echo $reponse['id']; ?>.png">
 				<?php } ?>
-				<div class="Contenu">
+     <div class="contenu">
 		<h3><?php echo $reponse['title']; ?></h3>
-		<!-- <p id="text"><?php echo $reponse['text']; ?></p> -->
 
-		<a id="comment"href="Commentaire.php?id=<?php echo $reponse['id']; ?>">Lire plus et laisser un commentaire</a>
+		<span class="title-divider"></span>
 
+		<p id="text"><?php echo $reponse['text']; ?></p>
+    <div class="text-center">
+
+
+		<a id="comments"  href="comments.php?id=<?php echo $reponse['id']; ?>">Lire plus et laisser un commentaire</a>
+    </div>
 		<p id="auteur">Ecrit par: <?php echo $reponse['author']; ?></p>
 
 		<p id="date">Paru le: <?php echo date('d/m/Y', strtotime($reponse['date'])); ?></p>
   </div>
-</div>
+  </div>
+  <!-- </div> -->
+
 
 
   		<?php } ?>
-
+</div>
+</div>
       <footer role="contentinfo">
         <p>Copyright (c) 2017  Thomas Clavier</p>
 

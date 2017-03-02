@@ -1,15 +1,22 @@
-
+body
+{
+  background-color : #f3f3f3;
+}
 .form-group
 {
   margin-left: 75%;
   margin-bottom: 2.5%;
   margin-top: 2%;
 }
+.col-sm-4
+{
+  text-align: center;
+}
 
 .col-sm-3
 {
-  font-size: 1em;
-  font-family: "Sansita";
+  font-size: 1.3em;
+  font-family: "Roboto";
   text-align: center;
 }
 .navbar-nav
@@ -19,7 +26,7 @@
 
 .navbar-nav > li > a
 {
-  padding-top: 0px;
+  padding-top: 10px;
   padding-bottom: 0px;
 }
 
@@ -38,41 +45,58 @@ p
   font-family: "Sansita";
   color: #E3E1E1;
 }
-.article
-{
-  width: 35%;
-  margin-bottom: 1.5%;
-  text-align: center;
-  display: inline-block;
-}
+
 
 .articles
 {
-  width: 76%;
+  background-color: #FFFFFF;
   margin-bottom: 1.5%;
   text-align: center;
-  display: inline-block;
-  margin-left: 12%;
+  padding-bottom: 1%;
+  padding-top: 0.1%;
+  width: 100%;
 }
+
+.comments
+{
+  background-color: #FFFFFF;
+  margin-bottom: 1.5%;
+  text-align: center;
+  padding-bottom: 1%;
+  padding-top: 0.1%;
+  width: 350px;
+}
+
 
 .Contenu
 {
-  background-color: #FFFFFFB3;
-
+  background-color: #FFFFFF;
   margin-bottom: 1.5%;
   text-align: center;
+  padding-bottom: 1%;
+  padding-top: 0.1%;
+  width: 350%;
 }
 #comment
 {
-  color: #d1452c;
+  color: #595a5c;
 }
+
+#comments
+{
+  color: #d1452c;
+  font-family: "Roboto";
+}
+
 h3
 {
   text-align: center;
+  color: #595a5c;
 }
 .navbar
 {
   border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 a
@@ -114,8 +138,7 @@ margin-bottom: 3%;
 
 form
 {
-  width: 75%;
-  margin-left: 12%;
+
   text-align: center;
   margin-bottom: 3%;
   background-color: rgba(19, 35, 47, 0.9);
@@ -134,27 +157,56 @@ form
 }
 
 .btn{
-  width: 49%;
+  width: 100%;
   margin-top: 5%;
   background : #1ab188;
 }
 
-.icon{
-  width: 32px;
-  height: 32px;
-}
+
 
 #text
 {
-  color: #000000;
+  color: #595a5c;
 }
 
 #auteur
 {
-  color: #000000;
+  color: #595a5c;
 }
 
 #date
 {
-  color: #000000;
+  color: #595a5c;
+}
+
+.title-divider
+{
+  color : #595a5c;
+  border-top: 2px solid;
+display: block;
+max-width: 48px;
+margin: 0 auto 15px;
+}
+.social
+{
+  width: 64px;
+  height: 64px;
+}
+
+.container
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+.picture
+{
+  height: 100px;
+}
+.contenu
+{
+  background-color: #FFFFFF;
+}
+.navbar-toggle .icon-bar
+{
+  background-color: #FFFFFF;
 }

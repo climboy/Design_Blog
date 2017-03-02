@@ -47,8 +47,9 @@
           </div>
         </div>
       </nav>
-      <input id="recherche" class="col-sm-4 col-sm-offset-4" type="text" name="recherche" placeholder="Search">
     </div>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <div class="container">
 
 
@@ -60,7 +61,6 @@
           <input type="file" name="picture" accept="image/*">
       		<div class="buttons">
       	<button type="submit"  class="btn btn-success">Envoyer</button>
-      	<button class="btn btn-info" type="reset">Reset</button>
       </div>
       	</form>
       </div>
