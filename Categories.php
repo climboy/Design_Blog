@@ -24,21 +24,8 @@
   <body>
 		<img class="coffee"src="css/coffee.jpg">
 		<div class="head">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-    <div class="form-group">
-    <button type="submit" name="button">S'inscrire</button>
-  </div>
-  <div class="form-group">
-    <button type="submit" name="button">Connexion</button>
-  </div>
-</div>
-</div>
-</div>
-<nav class="navbar navbar-light" style="background-color: #1A1919E6;" role="navigation">
+
+<nav class="navbar navbar-light"  role="navigation">
           <div class="container-fluid">
       <div class="navbar-header">
    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -50,10 +37,10 @@
  </div>
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-								<li class="col-sm-3"><a href="home.php">Accueil</a></li>
-								<li class="col-sm-3"><a href="postarticles.php">Création</a></li>
-								<li class="col-sm-3"><a href="Categories.php">Catégories</a></li>
-								<li class="col-sm-3"><a href="Follow.php">Follow</a></li>
+								<li class="col-sm-3"><img class="icone" src="css/home.png"><a href="home.php">Accueil</a></li>
+								<li class="col-sm-3"><img class="icone" src="css/light.png"><a href="postarticles.php">Création</a></li>
+								<li class="col-sm-3"><img class="icone" src="css/join.png"><a href="Categories.php">Devenir Membre</a></li>
+								<li class="col-sm-3"><img class="icone" src="css/follow.png"><a href="Follow.php">Réseaux Sociaux</a></li>
               </ul>
           </div>
         </div>

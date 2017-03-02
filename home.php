@@ -26,7 +26,7 @@
   <body>
 		<img class="coffee"src="css/coffee.jpg">
 		<div class="head">
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4"></div>
@@ -39,8 +39,8 @@
   </div>
 </div>
 </div>
-</div>
-<nav class="navbar navbar-light" role="navigation">
+</div> -->
+<nav class="navbar navbar-light navbar-fixed-top" role="navigation">
           <div class="container-fluid">
       <div class="navbar-header">
    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -52,14 +52,15 @@
  </div>
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-								<li class="col-sm-3"><a href="home.php">Accueil</a></li>
-								<li class="col-sm-3"><a href="postarticles.php">Création</a></li>
-								<li class="col-sm-3"><a href="Categories.php">Catégories</a></li>
-								<li class="col-sm-3"><a href="Follow.php">Follow</a></li>
+								<li class="col-sm-3"><img class="icone" src="css/home.png"><a href="home.php">Accueil</a></li>
+								<li class="col-sm-3"><img class="icone" src="css/light.png"><a href="postarticles.php">Création</a></li>
+								<li class="col-sm-3"><img class="icone" src="css/join.png"><a href="Categories.php">Devenir Membre</a></li>
+								<li class="col-sm-3"><img class="icone" src="css/follow.png"><a href="Follow.php">Réseaux Sociaux</a></li>
               </ul>
           </div>
         </div>
       </nav>
+
 		</div>
     <script src="https://code.jquery.com/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -79,7 +80,7 @@
 
 		<span class="title-divider"></span>
 
-		<p id="text"><?php echo $reponse['text']; ?></p>
+		<!-- <p id="text"><?php echo $reponse['text']; ?></p> -->
     <div class="text-center">
 
 

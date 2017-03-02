@@ -11,11 +11,12 @@ body
 .col-sm-4
 {
   text-align: center;
+  display: block;
 }
 
 .col-sm-3
 {
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: "Roboto";
   text-align: center;
 }
@@ -76,6 +77,8 @@ p
   padding-bottom: 1%;
   padding-top: 0.1%;
   width: 350%;
+  height: 191px;
+  display: block;
 }
 #comment
 {
@@ -96,12 +99,12 @@ h3
 .navbar
 {
   border-radius: 0px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(221, 221, 221, 1);
 }
 
 a
 {
-  color: #8C8181;
+  color: #fcfcfc;
 }
 
 .nav > li > a:focus, .nav > li > a:hover
@@ -208,5 +211,49 @@ margin: 0 auto 15px;
 }
 .navbar-toggle .icon-bar
 {
-  background-color: #FFFFFF;
+  background-color: #000000;
+}
+a:focus, a:hover
+{
+  color: #696969;
+}
+
+.icone
+{
+  width: 32px;
+  height: 32px;
+  margin-top: 2%;
+}
+
+.texte
+{
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+h1
+{
+  color: #DDDDDD;
+}
+
+
+#send
+{
+  background : #1ab188;
+
+}
+
+#selectedfile
+{
+  color: #000000;
+  border-radius: 5px;
+  border: none;
+}
+
+#file
+{
+  background : #1ab188;
+  color : #ffffff;
+  border: none;
+  border-radius: 4px;
 }
