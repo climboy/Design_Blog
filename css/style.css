@@ -1,6 +1,6 @@
 body
 {
-  background-color : #f3f3f3;
+  background-color : #e1e1e1;
 }
 .form-group
 {
@@ -11,7 +11,6 @@ body
 .col-sm-4
 {
   text-align: center;
-  display: block;
 }
 
 .col-sm-3
@@ -56,18 +55,29 @@ p
   padding-bottom: 1%;
   padding-top: 0.1%;
   width: 100%;
+  box-shadow: 0px 4px 7px -1px #a8a8a8;
 }
 
 .comments
 {
-  background-color: #FFFFFF;
+  background-color: #FCFCFC;
   margin-bottom: 1.5%;
   text-align: center;
   padding-bottom: 1%;
   padding-top: 0.1%;
-  width: 350px;
+  /*border-bottom: 3px solid #7e7a7a;*/
+  border-top: 3px solid #7e7777;
+  width: 100%;
+  margin-top: 5%;
+
 }
 
+.container{
+  width: 75%;
+  padding-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 .Contenu
 {
@@ -78,28 +88,25 @@ p
   padding-top: 0.1%;
   width: 350%;
   height: 191px;
-  display: block;
+  display: block;*
 }
 #comment
 {
   color: #595a5c;
 }
 
-#comments
-{
-  color: #d1452c;
-  font-family: "Roboto";
-}
+
 
 h3
 {
   text-align: center;
   color: #595a5c;
+  font-size: 32px;
 }
 .navbar
 {
   border-radius: 0px;
-  background-color: rgba(221, 221, 221, 1);
+  background-color: rgb(200, 200, 200);
 }
 
 a
@@ -141,12 +148,12 @@ margin-bottom: 3%;
 
 form
 {
-
   text-align: center;
   margin-bottom: 3%;
   background-color: rgba(19, 35, 47, 0.9);
   padding: 2%;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
+  box-shadow: 0px 4px 7px -1px #a8a8a8;
   color : #FFFFFF;
   font-family: "Roboto";
 }
@@ -170,6 +177,9 @@ form
 #text
 {
   color: #595a5c;
+  width: 60%;
+  margin-left: 19%;
+
 }
 
 #auteur
@@ -196,18 +206,19 @@ margin: 0 auto 15px;
   height: 64px;
 }
 
-.container
-{
-  margin-left: auto;
-  margin-right: auto;
-}
 .picture
 {
-  height: 100px;
+  height: 200px;
+  width: 175px;
+  box-shadow: 0px 4px 7px -1px #a8a8a8;
+
 }
 .contenu
 {
   background-color: #FFFFFF;
+  margin-bottom: 15%;
+  box-shadow: 0px 4px 7px -1px #a8a8a8;
+
 }
 .navbar-toggle .icon-bar
 {
@@ -245,15 +256,38 @@ h1
 
 #selectedfile
 {
-  color: #000000;
+  color: #ffffff;
   border-radius: 5px;
   border: none;
+  text-align: center;
+  background: transparent;
 }
 
 #file
 {
-  background : #1ab188;
-  color : #ffffff;
+  background: #1ab188;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
+  width: 100%;
+  padding: 0.8%;
+}
+.post
+{
+  margin-bottom: 15%;
+
+}
+.fail
+{
+  margin-top:220px;
+}
+.read
+{
+  width : 50%;
+  background: orange;
+}
+
+h2
+{
+  font-family: "Roboto";
 }

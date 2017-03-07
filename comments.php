@@ -59,23 +59,24 @@
 
 
 				<div class="container articles">
+          <div class="post">
 
                   <h3><?php echo (isset($articles[0]['title'])) ? $articles[0]['title'] : "Article not exist" ; ?></h3>
 
-									<span class="title-divider"></span>
 
                 <p id="text">
                     <?php echo (isset($articles[0]['text'])) ? $articles[0]['text'] : "Article not exist"; ?>
                 </p>
 
-                <p id="auteur">Article de:
-                    <?php echo (isset ($articles[0]['author'])) ? $articles[0]['author'] : "Article not exist"; ?>
+                <p id="auteur">Ecrit par:
+                    <strong><?php echo (isset ($articles[0]['author'])) ? $articles[0]['author'] : "Article not exist"; ?></strong>
                 </p>
 
-                <p id="date">Paru le:
+                <p id="date">Publié le:
                     <?php echo (isset($articles[0]['date'])) ? $articles[0]['date'] : "Article not exist"; ?>
                 </p>
-            </div>
+              </div>
+                <h2>Commentaires</h2>
 
 						<?php
         $req = $bdd->query("SELECT * FROM comments where id_articles=".$_GET['id']." ORDER BY id DESC");
@@ -87,35 +88,40 @@
 
 
             ?>
-             <div class="container comments">
-            <p id="auteur">Commentaire de : <?php echo $reponse['author']; ?></p>
-            <p id="comment"><?php echo $reponse['comment']; ?></p>
-            <p id="date">Paru le: <?php echo $reponse['date']; ?></p>
+             <div class="container">
+               <div class="comments">
+
+                 <p id="auteur"><strong><?php echo $reponse['author']; ?></strong> a commenté le <?php echo date('d/m/Y', strtotime($reponse['date'])); ?></p>
+               <p id="comment"><?php echo $reponse['comment']; ?></p>
+               <!-- <p id="date">Paru le: <?php echo date('d/m/Y', strtotime($reponse['date'])); ?></p> -->
 
             </div>
+           </div>
+
 
 
             <?php }
             ?>
-
 						<div class="container">
 
 
-							<form id="form" classs="form-group" action="postcomments.php" method="post" name="formulaire" enctype="multipart/form-data">
+							<form id="form" classs="form-group" action="comments.php?id=<?php echo $_GET['id'];?>" method="post" name="formulaire" enctype="multipart/form-data">
 								<h2> Poster un commentaire</h2>
 								<input type="hidden" name="id" value="<?php echo $_GET['id'];?>"/>
 								<input class="form-control" placeholder="Pseudo" type="text" name="author" /><br/>
 								<textarea type="text" placeholder="Commentaire" class="form-control" name="text" rows="3"></textarea><br/>
-                <input type="file" id="hiddenfile" style="display:none" name="file" onChange="getvalue();"/>
-                <input type="text" id="selectedfile" placeholder="Choisissez un fichier"/>
-                <input type="button" id="file" value="Select a file" onclick="getfile();"/>
+                <!-- <input type="file" id="hiddenfile" style="display:none" name="file" onChange="getvalue();"/>
+                <input type="button" id="file" value="Charger une image" onclick="getfile();"/>
+                <input type="text" id="selectedfile" /> -->
 								<div class="buttons">
 							<button type="submit"  class="btn btn-success">Envoyer</button>
 						</div>
 							</form>
 						</div>
+          </div>
 
 						<?php
+
 
 						if(isset($_REQUEST['author']) && isset($_REQUEST['text']) && isset($_REQUEST['id'])){
 

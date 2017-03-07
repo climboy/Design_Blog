@@ -66,7 +66,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <div class="container-fluid">
 
-<div class="row">
+<!-- <div class="row"> -->
 		<?php foreach($reponses as $reponse){ ?>
 			<!-- <div class="container"> -->
 
@@ -74,30 +74,36 @@
 
 				<?php if (file_exists(__DIR__.'/picture/article'.$reponse['id'].'.png')) { ?>
   <img  class="picture" src="picture/article<?php echo $reponse['id']; ?>.png">
-				<?php } ?>
-     <div class="contenu">
+  <div class="contenu">
+				<?php }
+else { ?>
+  <div class="contenu fail">
+
+<?php } ?>
+
+
 		<h3><?php echo $reponse['title']; ?></h3>
 
 		<span class="title-divider"></span>
 
-		<!-- <p id="text"><?php echo $reponse['text']; ?></p> -->
+		<p id="text"><?php $text= $reponse['text'];
+    $rest= substr($text, 0,25)."...";echo $rest; ?></p>
     <div class="text-center">
 
 
-		<a id="comments"  href="comments.php?id=<?php echo $reponse['id']; ?>">Lire plus et laisser un commentaire</a>
+		<a class="btn btn-warning read"  href="comments.php?id=<?php echo $reponse['id']; ?>">Lire plus </a>
     </div>
-		<p id="auteur">Ecrit par: <?php echo $reponse['author']; ?></p>
+		<p id="auteur">Ecrit par: <strong><?php echo $reponse['author']; ?></strong></p>
 
-		<p id="date">Paru le: <?php echo date('d/m/Y', strtotime($reponse['date'])); ?></p>
+		<p id="date">Publié le: <?php echo date('d/m/Y', strtotime($reponse['date'])); ?></p>
   </div>
   </div>
   <!-- </div> -->
 
 
-
   		<?php } ?>
 </div>
-</div>
+<!-- </div> -->
       <footer role="contentinfo">
         <p>Copyright (c) 2017  Thomas Clavier</p>
 

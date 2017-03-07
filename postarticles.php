@@ -46,8 +46,8 @@
       		<input class="form-control" placeholder="Titre de l'article" type="text" name="title" /><br/>
       		<textarea type="text" placeholder="Contenu de l'article" class="form-control" name="text" rows="3"></textarea><br/>
           <input type="file" id="hiddenfile" style="display:none" name="file" onChange="getvalue();"/>
-          <input type="text" id="selectedfile" placeholder="Choisissez un fichier"/>
-          <input type="button" id="file" value="Select a file" onclick="getfile();"/>
+          <input type="button" id="file" value="Charger une image" onclick="getfile();"/>
+          <input type="text" id="selectedfile" />
       		<div class="buttons">
       	<button type="submit"  class="btn btn-success">Envoyer</button>
       </div>
@@ -75,13 +75,13 @@
           $req->execute();
 
           $id = $bdd->lastInsertId();
-          if (isset($_FILES['picture'])) {
-            copy($_FILES['picture']['tmp_name'], __DIR__.'/picture/article'.$id.'.png');
+          if (isset($_FILES['file'])) {
+            copy($_FILES['file']['tmp_name'], __DIR__.'/picture/article'.$id.'.png');
           }
 
 
-          header('Location: Categories.php');
-        exit();
+        //   header('Location: home.php');
+        // exit();
       }
        ?>
       <footer role="contentinfo">
