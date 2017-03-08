@@ -77,7 +77,8 @@
   <div class="contenu">
 				<?php }
 else { ?>
-  <div class="contenu fail">
+    <img  class="picture" src="picture/nopic.png">
+  <div class="contenu">
 
 <?php } ?>
 
@@ -90,8 +91,11 @@ else { ?>
     $rest= substr($text, 0,25)."...";echo $rest; ?></p>
     <div class="text-center">
 
-
-		<a class="btn btn-warning read"  href="comments.php?id=<?php echo $reponse['id']; ?>">Lire plus </a>
+      <a class="btn icon-btn btn-warning" href="comments.php?id=<?php echo $reponse['id']; ?>">
+  <span class="glyphicon btn-glyphicon glyphicon-list-alt img-circle text-warning"></span>
+  Lire Plus
+  </a>
+		<!-- <a class="btn btn-warning read"  href="comments.php?id=<?php echo $reponse['id']; ?>">Lire plus </a> -->
     </div>
 		<p id="auteur">Ecrit par: <strong><?php echo $reponse['author']; ?></strong></p>
 

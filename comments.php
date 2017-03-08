@@ -59,6 +59,9 @@
 
 
 				<div class="container articles">
+          <?php if (file_exists(__DIR__.'/picture/article'.$_GET['id'].'.png')) { ?>
+    <img  class="affiche" src="picture/article<?php echo $_GET['id']; ?>.png">
+  				<?php } ?>
           <div class="post">
 
                   <h3><?php echo (isset($articles[0]['title'])) ? $articles[0]['title'] : "Article not exist" ; ?></h3>
